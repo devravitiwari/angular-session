@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Luke Skywalker",
+        "address": {
+            "street": "PO Box123",
+            "city": "Secret Rebel Base",
+            "planet": "Yavin4"
+        },
+        "friends": [
+            "Han",
+            "Lia",
+            "Chewbacca"
+        ]
+    },
+    {
+        "name": "Han Solo",
+        "address": {
+            "street": "PO Box123",
+            "city": "Mos Eisley",
+            "planet": "Tottoine"
+        },
+        "friends": [
+            "Yatsi",
+            "Lia",
+            "Chewbacca"
+        ]
+    }
+]

@@ -1,0 +1,10 @@
+<div ng-show="!!vmUC.user.address && !vmUA.collapsed" ng-click="vmUA.collapseAddress()">
+    <h4>Address </h4>
+    {{vmUC.user.address.street}}
+    <br/> {{vmUC.user.address.city}}
+    <br/> {{vmUC.user.address.planet}}
+</div>
+<div ng-show="!!vmUC.user.address && vmUA.collapsed" ng-click="vmUA.expandAddress()">
+    <h4>Address</h4>
+    {{vmUC.user.address.planet}}...
+</div>

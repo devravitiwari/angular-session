@@ -1,0 +1,19 @@
+<div class="panel panel-primary">
+    <div class="panel-heading" ng-click="vmUC.collapse()">{{vmUC.user.name}}</div>
+    <div class="panel-body" ng-hide="vmUC.collapsed">
+        <user-address></user-address>
+        <br/>
+        <h4>Friends</h4>
+        <ul>
+            <li ng-repeat="friend in vmUC.user.friends">
+                {{friend}}
+                <remove-friend action="vmUC.removeFriend(friend)"></remove-friend>
+            </li>
+        </ul>
+        <div ng-show="!!vmUC.user.rank">
+            Rank : {{vmUC.user.rank}}
+        </div>
+        <button ng-show="!vmUC.user.rank" class="btn btn-success" ng-click="vmUC.knightMe(vmUC.user)">Knight Me</button>
+
+    </div>
+</div>

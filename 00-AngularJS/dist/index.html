@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-strict-di>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular Precap</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css">
+</head>
+<body class="container">
+    
+    <h2>
+        AngularJS: Create your own DSL
+        <small>A designer friendly web framework</small>
+    </h2>
+
+    <hr>
+
+    <div ng-controller="userController as vm">
+        <user-card user="vm.user1"></user-card>
+        <user-card user="vm.user2" collapsed="true"></user-card>
+    </div>
+
+    <script src="/vendor/jquery.js"></script>
+    <script src="/vendor/angular.js"></script>
+
+    <script src="/app.js"></script>
+    <script src="/user-card/user-service.js"></script>
+    <script src="/user-card/user-controller.js"></script>
+    <script src="/user-card/user-card-directive.js"></script>
+    <script src="/user-card/user-address-directive.js"></script>
+    <script src="/user-card/remove-friend-directive.js"></script>
+
+</body>
+</html>
