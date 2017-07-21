@@ -1,0 +1,17 @@
+{
+  "name": "ch05",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "lite-server -c=bs-config.json",
+    "start": "npm run serve"
+  },
+  "author": "Ravi Tiwari",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

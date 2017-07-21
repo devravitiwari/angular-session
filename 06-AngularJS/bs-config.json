@@ -1,6 +1,0 @@
-{
-  "port": 8080,
-  "files": [
-    "./index.html", "./app/**/*.js"
-  ]
-}

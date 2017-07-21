@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-strict-di>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular Precap</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body class="container">
+    
+    <h2>
+        AngularJS - <small>HTML enhanced for web apps!</small>
+    </h2>
+
+    <hr>
+    
+    <nav class="navbar navbar-default navbar-inverse" class="container-fluid">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">At The Movies</a>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <div class="container">
+        <movie-list></movie-list>
+    </div>
+
+    <hr>
+
+    <div ng-controller="userController as vm">
+        <user-card user="vm.user1" collapsed="true"></user-card>
+        <user-card user="vm.user2" collapsed="true"></user-card>
+    </div>
+
+
+    <script src="/jquery.js"></script>
+    <script src="/angular.js"></script>
+    
+    <script src="/app/app.js"></script>
+    <script src="/app/user-card/user-service.js"></script>
+    <script src="/app/user-card/user-controller.js"></script>
+    <script src="/app/user-card/user-card-directive.js"></script>
+    <script src="/app/user-card/user-address-directive.js"></script>
+    <script src="/app/user-card/remove-friend-directive.js"></script>
+
+    <script src="/app/movies/movie-list.component.js"></script>
+    <script src="/app/movies/movie-rating.component.js"></script>
+
+</body>
+</html>
